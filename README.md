@@ -1,2 +1,2 @@
 # InstallEnsDemoLite
-ENSDEMO port to IRIS without HL7 and DICOM exemples
+ENSDEMO port to IRIS without HL7 and DICOM examples

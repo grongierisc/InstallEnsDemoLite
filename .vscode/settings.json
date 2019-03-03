@@ -1,0 +1,6 @@
+{
+    "objectscript.conn.password": "password",
+    "objectscript.autoCompile": true,
+    "objectscript.conn.active": true,
+    "objectscript.conn.version": 3
+}

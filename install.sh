@@ -19,6 +19,7 @@ password=$2
 ClassImportDir=$DIR/install
 NameSpace="ENSDEMO"
 CspPath="/csp/ensdemo"
+SrcDir=$DIR/src
 
 irissession $instanceName -U USER <<EOF 
 SuperUser
@@ -32,6 +33,9 @@ zn "%SYS"
 
 set props("DeepSeeEnabled")=1
 set sc=##class(Security.Applications).Modify("$CspPath", .props)
+
+zn "$NameSpace"
+do \$system.OBJ.ImportDir("$SrcDir","*.cls","cubk",.errors,1)
 
 halt
 EOF

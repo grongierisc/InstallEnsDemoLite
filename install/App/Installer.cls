@@ -19,14 +19,10 @@ XData Install [ XMLNamespace = INSTALLER ]
 
     <If Condition='(##class(Config.Namespaces).Exists("${NAMESPACE}")=0)'>
         <Log Text="Creating namespace ${NAMESPACE}" Level="0"/>
-        <CopyDir  
-		    Src="${DirBin}"
-            Target="${MGRDIR}/${NAMESPACE}"
-            IgnoreErrors="0"/>
             
         <Namespace Name="${NAMESPACE}" Create="yes" Code="${NAMESPACE}" Ensemble="1" Data="${NAMESPACE}">
             <Configuration>
-                <Database Name="${NAMESPACE}" Dir="${MGRDIR}/${NAMESPACE}" Create="no"/>
+                <Database Name="${NAMESPACE}" Dir="${MGRDIR}/${NAMESPACE}" Create="yes"/>
             </Configuration>
         
             <CSPApplication Url="/csp/${NAMESPACE}" Directory="${CSPDIR}/${NAMESPACE}" AuthenticationMethods="64" IsNamespaceDefault="true" Grant="AppRole" />

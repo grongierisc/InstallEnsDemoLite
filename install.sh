@@ -19,7 +19,8 @@ password=$2
 ClassImportDir=$DIR/install
 NameSpace="ENSDEMO"
 CspPath="/csp/ensdemo"
-SrcDir=$DIR/src
+SrcDir=$DIR/src/CLS
+DirFront=$DIR/src/CSP/csp/demo
 
 irissession $instanceName -U USER <<EOF 
 SuperUser
@@ -27,6 +28,7 @@ $password
 do \$system.OBJ.ImportDir("$ClassImportDir","*.cls","cubk",.errors,1)
 write "Complation de l'installer done"
 Set pVars("DirBin")="$DIR/ENSDEMO"
+Set pVars("DirFront")="$DirFront"
 Set pVars("NAMESPACE")="$NameSpace"
 Do ##class(App.Installer).setup(.pVars)
 zn "%SYS"

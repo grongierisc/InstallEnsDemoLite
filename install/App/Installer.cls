@@ -28,6 +28,12 @@ XData Install [ XMLNamespace = INSTALLER ]
             <CSPApplication Url="/csp/${NAMESPACE}" Directory="${CSPDIR}/${NAMESPACE}" AuthenticationMethods="64" IsNamespaceDefault="true" Grant="AppRole" />
 
         </Namespace>
+
+        <CopyDir  
+        Src="${DirFront}"
+        Target="${CSPDIR}/${NAMESPACE}"
+        IgnoreErrors="0"/>
+
     </If>
 
 </Manifest>

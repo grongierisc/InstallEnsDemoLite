@@ -2,5 +2,8 @@
     "objectscript.conn.password": "password",
     "objectscript.autoCompile": true,
     "objectscript.conn.active": true,
-    "objectscript.conn.version": 3
+    "objectscript.conn.version": 3,
+    "objectscript.compileFlags": "cbuk",
+    "objectscript.conn.ns": "ENSDEMO",
+    "objectscript.conn.port": 57772
 }

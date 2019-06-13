@@ -2,20 +2,12 @@
 
 ENSDEMO port to IRIS without HL7 and DICOM examples
 
-## Prerequisites
-
-This project use large data files. Make sure that you have git-lfs installed.
-
-```
-See https://git-lfs.github.com/
-```
-
 ### Installing
 
 Clone this repository
 
 ```
-git lfs clone https://github.com/grongierisc/InstallEnsDemoLite.git
+git clone https://github.com/grongierisc/InstallEnsDemoLite.git
 ```
 
 And run install.sh

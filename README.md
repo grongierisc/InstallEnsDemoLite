@@ -2,20 +2,12 @@
 
 ENSDEMO port to IRIS without HL7 and DICOM examples
 
-## Prerequisites
-
-This project use large data files. Make sure that you have git-lfs installed.
-
-```
-See https://git-lfs.github.com/
-```
-
 ### Installing
 
 Clone this repository
 
 ```
-git lfs clone https://github.com/grongierisc/InstallEnsDemoLite.git
+git clone https://github.com/grongierisc/InstallEnsDemoLite.git
 ```
 
 And run install.sh
@@ -31,14 +23,13 @@ This include data and code of :
 
 * ComplexMap
 * CustomSearchTable
-* Dashboard
+* Dashboard [tuto](https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=ECONFIG_dash#ECONFIG_C233288)
 * FloodMonitor
 * Loan
 * RecordMap
 * RecordMapBatch
-* REST
+* REST [tuto](https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=EREST_walkthrough) 
 * SAP
 * Util
-* Workflow
+* Workflow [tuto](https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=EGWF_example)
 * X12
-

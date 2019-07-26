@@ -2,7 +2,7 @@
 
 ENSDEMO port to IRIS without HL7 and DICOM examples
 
-### Installing
+### Install
 
 Clone this repository
 
@@ -14,6 +14,12 @@ And run install.sh
 
 ```
 sh install.sh <IRIS Instance> <IRIS SuperUser Password>
+```
+
+### On docker
+
+```
+docker build -t ensdemo
 ```
 
 ### Content of this project

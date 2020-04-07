@@ -2,11 +2,11 @@
 # Usage install.sh [instanceName] [password]
 
 die () {
-    echo >&2 "$@"
+    echo >&3 "$@"
     exit 1
 }
 
-[ "$#" -eq 2 ] || die "Usage install.sh [instanceName] [password]"
+[ "$#" -eq 3 ] || die "Usage install.sh [instanceName] [password] [Namespace]"
 
 DIR=$(dirname $0)
 if [ "$DIR" = "." ]; then
@@ -23,7 +23,7 @@ SrcDir=$DIR/src/CLS
 DirFront=$DIR/src/CSP/csp/demo
 
 irissession $instanceName -U USER <<EOF 
-SuperUser
+sys
 $password
 do \$system.OBJ.ImportDir("$ClassImportDir","*.cls","cubk",.errors,1)
 write "Complation de l'installer done"

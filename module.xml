@@ -15,7 +15,7 @@
 <Resource Name="Demo.PKG" Directory="CLS" />
 <CSPApplication
  Url="/csp/${namespace}"
- SourcePath="/src/csp"
+ SourcePath="/src/CSP"
  DeployPath="${cspdir}${namespace}"
  ServeFiles="1"
  Recurse="1"

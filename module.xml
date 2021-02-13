@@ -12,7 +12,19 @@
 <Arg>$namespace</Arg>
 </Invoke>
 </Invokes>
-<Resource Name="Demo.PKG" Directory="cls" />
+<Resource Name="Demo.PKG" Directory="CLS" />
+<CSPApplication
+ Url="/csp/${namespace}"
+ SourcePath="/src/csp"
+ DeployPath="${cspdir}${namespace}"
+ ServeFiles="1"
+ Recurse="1"
+ CookiePath="/csp/${namespace}"
+ UseCookies="2"
+ MatchRoles=":{$dbrole}"
+ PasswordAuthEnabled="0"
+ UnauthenticatedEnabled="1"
+/>
 <SystemRequirements Version=">=2019.1" Interoperability="enabled" />
 </Module>
 </Document>

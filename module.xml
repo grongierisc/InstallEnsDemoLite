@@ -12,7 +12,7 @@
 <Arg>$namespace</Arg>
 </Invoke>
 </Invokes>
-<Resource Name="Demo.PKG"/>
+<Resource Name="Demo.PKG" Directory="cls" />
 <SystemRequirements Version=">=2019.1" Interoperability="enabled" />
 </Module>
 </Document>

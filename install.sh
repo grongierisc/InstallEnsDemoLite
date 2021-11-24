@@ -36,6 +36,8 @@ zn "%SYS"
 set props("DeepSeeEnabled")=1
 set sc=##class(Security.Applications).Modify("$CspPath", .props)
 
+do ##class(Security.Users).UnExpireUserPasswords("*")
+
 zn "$NameSpace"
 do \$system.OBJ.ImportDir("$SrcDir","*.cls","cubk",.errors,1)
 

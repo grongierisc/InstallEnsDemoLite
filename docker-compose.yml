@@ -6,6 +6,7 @@ services:
       context: .
     image: ensdemo:latest
     hostname: ensdemo
+    command: --check-caps false
     ports:
 #    - "51776:51773" # 51773 is the superserver default port
     - "51776:1972"  # 1972 is the new superserver default port

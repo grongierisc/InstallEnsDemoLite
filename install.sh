@@ -22,8 +22,8 @@ CspPath="/csp/ensdemo"
 SrcDir=$DIR/src/CLS
 DirFront=$DIR/src/CSP/csp/demo
 
-irissession $instanceName -U USER <<EOF 
-sys
+;; irissession $instanceName -U USER <<EOF 
+;; sys
 $password
 do \$system.OBJ.ImportDir("$ClassImportDir","*.cls","cubk",.errors,1)
 write "Complation de l'installer done"
